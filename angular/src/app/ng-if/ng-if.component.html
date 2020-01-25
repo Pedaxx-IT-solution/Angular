@@ -1,0 +1,12 @@
+<p>ng-if works!</p>
+<div *ngIf="isUserLoggedIn ; else logout">
+
+<h3>Welcome to cdac</h3>
+
+
+</div>
+
+<ng-template #logout>
+    <p> you are not welcome if value is false</p>
+
+</ng-template>
