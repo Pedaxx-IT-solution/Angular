@@ -1,0 +1,35 @@
+<html>
+    <head></head>
+    <body>
+
+        <div class="container">
+          <div class="row"> 
+              <div class="col-3"></div>
+              <div class="col-6">
+                  <table class="table">
+                      <tr class="thead-dark">
+                        <th>index</th>
+                        <th>name</th>
+                        <th>price</th>
+                        <th>quantity</th>
+                      </tr>
+                        <tr *ngFor=" let menu of Menus ; let i= index">
+                            <td>{{i+1}}</td>
+                            <td>{{menu.name}}</td>
+                            <td>{{menu.price}}</td>
+                            <!-- <td>{{menu.quantity}}</td> -->
+                            <td><input type="number" min="0" max="10"/></td>
+                              </tr>
+                  </table>
+
+
+
+
+
+              </div>
+              <div class="col-3"></div>
+          </div>
+        </div>
+    </body>
+
+</html>
